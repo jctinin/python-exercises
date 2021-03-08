@@ -27,12 +27,11 @@ print(calculo_percentual(100, 10))
 def fizz_buzz(num):
     if num % 5 == 0:
         return 'buzz'
-    elif num % 2 == 0:
+    if num % 3 == 0:
         return 'fizz'
-    elif num % 5 == 0 and num % 3 == 0:
+    if num % 5 == 0 and num % 3 == 0:
         return 'fizzBuzz'
-    else:
-        return num
+    return num
 
 
 print(fizz_buzz(4))
